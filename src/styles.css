@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: #011E55;
+  font-size: 22px;
+  font-family: "avenir_lt_std55_roman";
+  font-weight: 350;
+  text-align: center;
+}
+
+#bilboardSection {
+  background-image: url("./Images/blueHero.png");
+  padding: 0px 15px 130px;
+}
+#bilboardSection p {
+  color: #FFF;
+}
+#bilboardSection nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+#bilboardSection nav .navlinks {
+  display: none;
+}
+#bilboardSection nav #logo {
+  width: 100px;
+  height: 40px;
+}
+#bilboardSection nav .menu-toggle {
+  gap: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#bilboardSection nav .menu-toggle p {
+  font-size: 20px;
+  font-family: "cera_problack";
+  color: #FFF;
+  font-weight: 900;
+}
+#bilboardSection nav .menu-toggle #toggleBttn {
+  display: flex;
+  flex-direction: column;
+  width: 35px;
+  height: 30px;
+  justify-content: space-between;
+}
+#bilboardSection nav .menu-toggle #toggleBttn .bars {
+  background-color: #FFF;
+  width: 100%;
+  height: 4px;
+  border-radius: 20px;
+}
+#bilboardSection nav .overlay {
+  background-color: rgb(88, 88, 172);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: 0.8s;
+}
+#bilboardSection nav .overlay a {
+  color: #FFF;
+  font-size: 26px;
+  font-family: "cera_problack";
+  font-weight: 700;
+  padding: 20px 0px;
+}
+#bilboardSection nav .overlay .link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+#bilboardSection nav .overlay .searchDiv {
+  padding: 13px 30px;
+  border-radius: 25px;
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+#bilboardSection nav .overlay .searchDiv input {
+  border: none;
+  width: 65px;
+  text-align: center;
+  font-family: "cera_problack";
+  color: #011E55;
+}
+#bilboardSection #heroSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  gap: 30px;
+}
+#bilboardSection #heroSection h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: "cera_problack";
+  color: #FFF;
+  font-weight: 900;
+}
+#bilboardSection #heroSection .bttnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+#bilboardSection #heroSection .bttnContainer button {
+  width: 234px;
+  height: 59px;
+  border: none;
+  font-size: 20px;
+  font-family: "cera_problack";
+  font-weight: 900;
+  color: #011E55;
+}
+#bilboardSection #heroSection .bttnContainer #greenBttn {
+  background-color: rgb(0, 132, 131);
+  color: #FFF;
+}
+
+#waitWhatSection {
+  padding: 0px 15px;
+}
+#waitWhatSection #laptop {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  bottom: 70px;
+}
+#waitWhatSection .girlphotoHloder {
+  width: 100%;
+  height: 100%;
+}
+#waitWhatSection .girlphotoHloder img {
+  width: 100%;
+  height: 100%;
+}
+#waitWhatSection .textHolder {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+#waitWhatSection .textHolder h2 {
+  font-family: "cera_problack";
+  color: #011E55;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 900;
+}
+#waitWhatSection .textHolder span {
+  font-size: 26px;
+  font-family: "cera_problack";
+}
+#waitWhatSection .textHolder button {
+  width: 234px;
+  height: 59px;
+  border: none;
+  font-size: 20px;
+  font-family: "cera_problack";
+  font-weight: 900;
+  background-color: #011E55;
+  color: #FFF;
+}
+
+#getStartedSection {
+  padding: 80px 15px;
+}
+#getStartedSection h2 {
+  font-family: "cera_problack";
+  color: #011E55;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 900;
+  margin-bottom: 60px;
+}
+#getStartedSection .bluecardHolder {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #011E55;
+  padding: 20px 15px;
+}
+#getStartedSection .bluecardHolder #circledNumbers {
+  position: relative;
+  bottom: 50px;
+  right: 150px;
+}
+#getStartedSection .bluecardHolder #iconImage {
+  width: 128px;
+  height: 130px;
+  margin-bottom: 20px;
+}
+#getStartedSection .bluecardHolder h3 {
+  font-size: 30px;
+  font-family: "cera_problack";
+  font-weight: 900;
+  color: #FFF;
+}
+#getStartedSection .bluecardHolder p {
+  color: #FFF;
+}
+#getStartedSection button {
+  width: 234px;
+  height: 59px;
+  border: none;
+  font-size: 20px;
+  font-family: "cera_problack";
+  font-weight: 900;
+  background-color: #011E55;
+  color: #FFF;
+  margin: 40px 0px 0px 65px;
+}
+
+#ResellmeFeaturesSection {
+  padding: 80px 15px;
+}
+#ResellmeFeaturesSection .resellmeHeadingHolder p {
+  text-align: left;
+}
+#ResellmeFeaturesSection h2 {
+  font-family: "cera_problack";
+  color: #011E55;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 900;
+}
+#ResellmeFeaturesSection .featuresPropHolder {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0px;
+}
+#ResellmeFeaturesSection .featuresPropHolder h4 {
+  color: #011E55;
+  font-size: 28px;
+  font-family: "cera_problack";
+  font-weight: 900;
+  margin-top: 20px;
+}
+#ResellmeFeaturesSection .featuresPropHolder button {
+  display: none;
+}/*# sourceMappingURL=styles.css.map */

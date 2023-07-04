@@ -1,7 +1,14 @@
 
-// import { a } from "react-router-dom";
+import { useState } from "react";
+import Overlay from "./Overlay";
 
 const Navbar = () => {
+
+const [openOverlay, setOpenOverlay] = useState(false);
+
+
+
+
     return ( 
 
         <nav>
@@ -23,7 +30,7 @@ const Navbar = () => {
                            <a to="" >Docs</a>
                            <img src={ require("../Images/arrowOut.png") } alt="" />
                       </div>
-                      <img src={ require("../Images/darkmode.png") } alt="" />
+                      <img id="sunIcon" onClick={ () =>  document.body.classList.toggle("dark-theme")} src={ require("../Images/darkmode.png") } alt="" />
                       <div className="searchDiv">
                            <img src={ require("../Images/search.png") } alt="" /> <input type="text" placeholder="Search" />
                       </div>
@@ -31,33 +38,15 @@ const Navbar = () => {
             </div>
             <div className="menu-toggle">
                  <p>Menu</p>
-                 <div id="toggleBttn">
+                 <div id="toggleBttn" onClick={ () => {setOpenOverlay(true)} }>
                       <div className="bars"></div>
                       <div className="bars"></div>
                       <div className="bars"></div>
                  </div>
             </div>
-            {/* <div className="overlay">
-                 <a>Docs</a>
-                 <a>Blog</a>
-                 <a>About Us</a>
-                 <div className="link-icon">
-                      <a to="" >Docs</a>
-                      <img src={ require("../Images/arrowOut.png") } alt="" />
-                 </div>
-                 <div className="link-icon">
-                      <a to="" >Portal</a>
-                      <img src={ require("../Images/arrowOut.png") } alt="" />
-                 </div>
-                 <div className="link-icon">
-                      <a to="" >Register</a>
-                      <a href=""><img src={ require("../Images/arrowOut.png") } alt="" /></a>
-                </div>
-                <img src={ require("../Images/darkmode.png") } alt="" />
-                <div className="searchDiv">
-                     <img src={ require("../Images/search.png") } alt="" /> <input type="text" placeholder="Search" />
-                </div>
-            </div> */}
+            { openOverlay && <Overlay setOpenOverlay={setOpenOverlay} />}
+
+          
         </nav>
         
      );

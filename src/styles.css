@@ -68,7 +68,20 @@ p {
   top: 0;
   left: 0;
   z-index: 1000;
-  transition: 0.8s;
+}
+#bilboardSection nav .overlay #closeBttn {
+  position: relative;
+  bottom: 80px;
+  left: 140px;
+  background-color: transparent;
+  border: #FFF 2px solid;
+  border-radius: 30px;
+  padding: 0px 20px;
+  font-size: 25px;
+  color: #FFF;
+}
+#bilboardSection nav .overlay #closeBttn:hover {
+  background-color: #011E55;
 }
 #bilboardSection nav .overlay a {
   color: #FFF;
@@ -137,6 +150,7 @@ p {
 
 #waitWhatSection {
   padding: 0px 15px;
+  background-color: #FFF;
 }
 #waitWhatSection #laptop {
   position: relative;
@@ -185,6 +199,7 @@ p {
 
 #getStartedSection {
   padding: 80px 15px;
+  background-color: #FFF;
 }
 #getStartedSection h2 {
   font-family: "cera_problack";
@@ -237,6 +252,7 @@ p {
 
 #ResellmeFeaturesSection {
   padding: 80px 15px;
+  background-color: #FFF;
 }
 #ResellmeFeaturesSection .resellmeHeadingHolder p {
   text-align: left;
@@ -266,4 +282,164 @@ p {
 }
 #ResellmeFeaturesSection .featuresPropHolder button {
   display: none;
+}
+
+#useCaseSection {
+  padding: 80px 15px;
+  background-color: #F8F8F8;
+}
+#useCaseSection h2 {
+  font-family: "cera_problack";
+  color: #011E55;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+#useCaseSection .featuresPropHolder h4 {
+  color: #011E55;
+  font-size: 28px;
+  font-family: "cera_problack";
+  font-weight: 900;
+  margin-top: 20px;
+}
+#useCaseSection .featuresPropHolder p {
+  text-align: left;
+}
+#useCaseSection .featuresPropHolder button {
+  width: 234px;
+  height: 59px;
+  border: none;
+  font-size: 20px;
+  font-family: "cera_problack";
+  font-weight: 900;
+  background-color: #011E55;
+  color: #FFF;
+}
+
+#testimonialSection {
+  padding: 50px 25px;
+  background-color: #011E55;
+}
+#testimonialSection h2 {
+  font-family: "cera_problack";
+  color: #011E55;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+#testimonialSection .testimonialCards {
+  background-color: #003F74;
+}
+#testimonialSection .testimonialCards #commas {
+  position: relative;
+  bottom: 40px;
+  left: 10px;
+  width: 55px;
+  height: 55px;
+}
+#testimonialSection .testimonialCards .cardTextHolder {
+  width: 100%;
+  padding: 0px 10px 10px 27px;
+  color: #FFF;
+}
+#testimonialSection .testimonialCards .cardTextHolder h6 {
+  font-size: 27px;
+}
+#testimonialSection .testimonialCards .cardTextHolder span {
+  font-size: 20px;
+  color: rgb(90, 89, 89);
+}
+#testimonialSection .testimonialCards .cardTextHolder #changeColor {
+  text-align: left;
+}
+
+#logosSection {
+  padding: 80px 15px;
+}
+#logosSection h2 {
+  font-family: "cera_problack";
+  color: #011E55;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+
+#signUpSection .blueHero {
+  background-image: url("./Images/blueHero.png");
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 25px;
+}
+#signUpSection .blueHero h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: "cera_problack";
+  color: #FFF;
+  font-weight: 900;
+}
+#signUpSection .blueHero p {
+  color: #FFF;
+  margin: 20px 0px;
+}
+#signUpSection .blueHero button {
+  width: 234px;
+  height: 59px;
+  border: none;
+  font-size: 20px;
+  font-family: "cera_problack";
+  font-weight: 900;
+  color: #011E55;
+}
+
+#footerSection {
+  background-color: #303846;
+  padding: 40px 25px 2px;
+}
+#footerSection #footerLogo {
+  margin-left: 15%;
+}
+#footerSection .footerTextHolder {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+#footerSection .footerTextHolder h6 {
+  color: #FFF;
+  font-size: 34px;
+  font-family: "cera_problack";
+  font-weight: 900;
+}
+#footerSection .footerTextHolder a {
+  color: #FFF;
+  text-align: left;
+  margin: 7px 0px;
+}
+#footerSection .link-icon {
+  margin: 7px 0px;
+}
+#footerSection p {
+  color: #FFF;
+  margin-top: 30px;
+}
+
+.swiper .res-slide {
+  min-width: 300px;
+  max-width: 400px;
+  min-height: 350px;
+  border-radius: 20px;
+}
+
+.swiper-nav-btns img {
+  width: 60px;
+  height: 60px;
+  margin: 0px 0.5rem;
+  margin-top: 30px;
+  transition: all 0.5s;
 }/*# sourceMappingURL=styles.css.map */

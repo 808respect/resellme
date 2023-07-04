@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
 }
+
+
 p{
     color: #011E55;
     font-size: 22px;
@@ -28,7 +30,7 @@ p{
         }
         #logo{
             width: 100px;
-            height: 40px
+            height: 40px;
         }
         .menu-toggle{
             gap: 12px;
@@ -59,7 +61,20 @@ p{
              top: 0;
              left: 0;
              z-index: 1000;
-             transition: 0.8s;
+             #closeBttn{
+                position: relative;
+                bottom: 80px;
+                left: 140px;
+                background-color: transparent;
+                border: #FFF 2px solid;
+                border-radius: 30px;
+                padding: 0px 20px;
+                font-size: 25px;
+                color: #FFF;
+                &:hover{
+                    background-color: #011E55;
+                }
+             }
              a{
                 color: #FFF;
                 font-size: 26px;
@@ -114,6 +129,7 @@ p{
 }
 #waitWhatSection{
     padding: 0px 15px;
+    background-color: #FFF;
     #laptop{
         position: relative;
         width: 100%;
@@ -145,6 +161,7 @@ p{
 }
 #getStartedSection{
     @include smallerSectionPadding();
+    background-color: #FFF;
     h2{
         @include h2font-size();
         margin-bottom: 60px
@@ -180,6 +197,7 @@ p{
 }
 #ResellmeFeaturesSection{
     @include smallerSectionPadding();
+    background-color: #FFF;
     .resellmeHeadingHolder{
         p{
             text-align: left;
@@ -203,4 +221,150 @@ p{
         }        
     }
 }
+#useCaseSection{
+    @include smallerSectionPadding();
+    background-color: #F8F8F8;
+    h2{
+        @include h2font-size();
+        margin-bottom: 50px;
+    }
+    .featuresPropHolder{
+        h4{
+            color: #011E55;
+            font-size: 28px;
+            font-family: 'cera_problack';
+            font-weight: 900;
+            margin-top: 20px;
+        } 
+        p{
+            text-align: left;
+        }    
+        button{
+            @include projectButtons();
+            background-color: #011E55;
+            color: #FFF;
+        }
+    }
+}
+
+#testimonialSection{
+    padding: 50px 25px;
+    background-color: #011E55;
+    h2{
+        @include h2font-size();
+        margin-bottom: 25px;
+    }
+    .testimonialCards{
+        background-color: #003F74;
+        #commas{
+            position: relative;
+            bottom: 40px;
+            left: 10px;
+            width: 55px;
+            height: 55px;
+        }
+        .cardTextHolder{
+            width: 100%;
+            padding: 0px 10px 10px 27px;
+            h6{
+                font-size: 27px;
+            }
+            span{
+                font-size: 20px;
+                color: rgb(90, 89, 89);
+            }
+            #changeColor{
+                text-align: left;
+            }   color: #FFF;
+        }
+    }
+}
+
+#logosSection{
+    @include smallerSectionPadding();
+    h2{
+        @include h2font-size();
+        margin-bottom: 25px;
+    }
+}
+
+#signUpSection{
+    .blueHero{
+        background-image: url("./Images/blueHero.png");
+        @include flexColumnWidthHeight100();
+        padding: 120px 25px;
+        h1{
+            text-align: center;
+            font-size: 40px;
+            font-family: 'cera_problack';
+            color: #FFF;
+            font-weight: 900; 
+        }
+        p{
+            color: #FFF;
+            margin: 20px 0px;
+        }
+        button{
+            @include projectButtons();
+            color: #011E55;
+        }
+    }
+}
+#footerSection{
+    background-color: #303846;
+    @include largerSectionPadding();
+    #footerLogo{
+        margin-left: 15%;
+    }
+    .footerTextHolder{
+        @include flexColumn();
+        margin-top: 30px;
+        h6{
+            color: #FFF;
+            font-size: 34px;
+            font-family: 'cera_problack';
+            font-weight: 900;
+        }
+        a{
+            color: #FFF;
+            text-align: left;
+            margin: 7px 0px;
+        }
+    }
+    .link-icon{
+            margin: 7px 0px;
+    }
+    p{
+        color: #FFF;
+        margin-top: 30px;
+    }
+}
+
+// SWIPER.JS.CAROUSEL
+  
+  .swiper .res-slide {
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 350px;
+    // border: 2px solid hsl(210, 100%, 50%);
+    border-radius: 20px;
+  }
+  
+  .swiper-nav-btns img {
+    width: 60px;
+    height: 60px;
+    margin: 0px 0.5rem;
+    margin-top: 30px;
+    transition: all .5s;
+  }
+  
+//   .swiper-nav-btns button:hover {
+//     background-color: hsl(210, 100%, 40%);
+//     cursor: pointer;
+//   }
+  
+
+
+
+
 

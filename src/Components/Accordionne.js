@@ -21,7 +21,7 @@ function Accordionne() {
       </Accordion.Item>
       <div className="gap-sm-below"></div>
       <Accordion.Item eventKey="1">
-        <Accordion.Header>How Do I Get Paid After Referring A Client?</Accordion.Header>
+        <Accordion.Header style={{ color: "red" }}>How Do I Get Paid After Referring A Client?</Accordion.Header>
         <Accordion.Body>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

@@ -24,18 +24,71 @@ p {
   align-items: center;
   padding-top: 20px;
 }
+@media (min-width: 992px) {
+  #bilboardSection nav {
+    margin-bottom: 100px;
+  }
+}
 #bilboardSection nav .navlinks {
   display: none;
 }
+@media (min-width: 992px) {
+  #bilboardSection nav .navlinks {
+    display: flex;
+  }
+}
+@media (min-width: 992px) {
+  #bilboardSection nav .navlinks a {
+    color: #FFF;
+    margin: 0px 10px 0px 25px;
+    font-size: 20px;
+    font-family: "cera_problack";
+  }
+}
+@media (min-width: 992px) {
+  #bilboardSection nav .navlinks .secondNavlinks {
+    display: flex;
+    margin-left: 230px;
+  }
+}
+#bilboardSection nav .navlinks .secondNavlinks #sunIcon {
+  margin: 0px 30px 0px;
+}
+#bilboardSection nav .navlinks .secondNavlinks .searchDiv {
+  padding: 5px 30px;
+  border-radius: 25px;
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#bilboardSection nav .navlinks .secondNavlinks .searchDiv input {
+  border: none;
+  width: 65px;
+  text-align: center;
+  font-family: "cera_problack";
+  color: #011E55;
+}
 #bilboardSection nav #logo {
-  width: 100px;
+  width: 125px;
   height: 40px;
+}
+@media (min-width: 992px) {
+  #bilboardSection nav #logo {
+    width: 200px;
+    height: 70px;
+  }
 }
 #bilboardSection nav .menu-toggle {
   gap: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (min-width: 992px) {
+  #bilboardSection nav .menu-toggle {
+    display: none;
+  }
 }
 #bilboardSection nav .menu-toggle p {
   font-size: 20px;
@@ -57,7 +110,7 @@ p {
   border-radius: 20px;
 }
 #bilboardSection nav .overlay {
-  background-color: rgb(88, 88, 172);
+  background-color: rgb(44, 78, 139);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -68,6 +121,7 @@ p {
   top: 0;
   left: 0;
   z-index: 1000;
+  opacity: 0.98;
 }
 #bilboardSection nav .overlay #closeBttn {
   position: relative;
@@ -89,6 +143,9 @@ p {
   font-family: "cera_problack";
   font-weight: 700;
   padding: 20px 0px;
+}
+#bilboardSection nav .overlay a:hover {
+  color: #011E55;
 }
 #bilboardSection nav .overlay .link-icon {
   display: flex;
@@ -143,9 +200,19 @@ p {
   font-weight: 900;
   color: #011E55;
 }
+#bilboardSection #heroSection .bttnContainer button:hover {
+  background-color: rgb(123, 124, 128);
+  color: sienna;
+  transition: 0.7s;
+}
 #bilboardSection #heroSection .bttnContainer #greenBttn {
   background-color: rgb(0, 132, 131);
   color: #FFF;
+}
+#bilboardSection #heroSection .bttnContainer #greenBttn:hover {
+  background-color: rgb(123, 124, 128);
+  color: sienna;
+  transition: 0.7s;
 }
 
 #waitWhatSection {
@@ -157,6 +224,13 @@ p {
   width: 100%;
   height: 300px;
   bottom: 70px;
+}
+@media (min-width: 992px) {
+  #waitWhatSection #laptop {
+    width: 70%;
+    height: 600px;
+    left: 200px;
+  }
 }
 #waitWhatSection .girlphotoHloder {
   width: 100%;
@@ -196,10 +270,20 @@ p {
   background-color: #011E55;
   color: #FFF;
 }
+#waitWhatSection .textHolder button:hover {
+  background-color: rgb(123, 124, 128);
+  color: sienna;
+  transition: 0.7s;
+}
 
 #getStartedSection {
   padding: 80px 15px;
   background-color: #FFF;
+}
+@media (min-width: 992px) {
+  #getStartedSection {
+    padding-left: 35px;
+  }
 }
 #getStartedSection h2 {
   font-family: "cera_problack";
@@ -209,7 +293,20 @@ p {
   font-weight: 900;
   margin-bottom: 60px;
 }
-#getStartedSection .bluecardHolder {
+#getStartedSection .cardsHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+@media (min-width: 992px) {
+  #getStartedSection .cardsHolder {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+#getStartedSection .cardsHolder .bluecardHolder {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -219,23 +316,30 @@ p {
   background-color: #011E55;
   padding: 20px 15px;
 }
-#getStartedSection .bluecardHolder #circledNumbers {
+#getStartedSection .cardsHolder .bluecardHolder #circledNumbers {
   position: relative;
   bottom: 50px;
   right: 150px;
 }
-#getStartedSection .bluecardHolder #iconImage {
+@media (min-width: 992px) {
+  #getStartedSection .cardsHolder .bluecardHolder #circledNumbers {
+    right: 210px;
+    width: 60px;
+    height: 60px;
+  }
+}
+#getStartedSection .cardsHolder .bluecardHolder #iconImage {
   width: 128px;
   height: 130px;
   margin-bottom: 20px;
 }
-#getStartedSection .bluecardHolder h3 {
+#getStartedSection .cardsHolder .bluecardHolder h3 {
   font-size: 30px;
   font-family: "cera_problack";
   font-weight: 900;
   color: #FFF;
 }
-#getStartedSection .bluecardHolder p {
+#getStartedSection .cardsHolder .bluecardHolder p {
   color: #FFF;
 }
 #getStartedSection button {
@@ -248,6 +352,11 @@ p {
   background-color: #011E55;
   color: #FFF;
   margin: 40px 0px 0px 65px;
+}
+#getStartedSection button:hover {
+  background-color: rgb(123, 124, 128);
+  color: sienna;
+  transition: 0.7s;
 }
 
 #ResellmeFeaturesSection {
@@ -316,6 +425,11 @@ p {
   background-color: #011E55;
   color: #FFF;
 }
+#useCaseSection .featuresPropHolder button:hover {
+  background-color: rgb(123, 124, 128);
+  color: sienna;
+  transition: 0.7s;
+}
 
 #testimonialSection {
   padding: 50px 25px;
@@ -328,6 +442,11 @@ p {
   font-size: 35px;
   font-weight: 900;
   margin-bottom: 25px;
+  color: #FFF;
+}
+#testimonialSection p {
+  color: #FFF;
+  margin-bottom: 35px;
 }
 #testimonialSection .testimonialCards {
   background-color: #003F74;
@@ -355,8 +474,23 @@ p {
   text-align: left;
 }
 
-#logosSection {
+#accordionSection {
   padding: 80px 15px;
+}
+#accordionSection h2 {
+  font-family: "cera_problack";
+  color: #011E55;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 900;
+}
+#accordionSection p {
+  margin: 37px 0px;
+}
+
+#logosSection {
+  padding: 30px 15px 20px;
+  margin-top: 0px;
 }
 #logosSection h2 {
   font-family: "cera_problack";
@@ -365,6 +499,17 @@ p {
   font-size: 35px;
   font-weight: 900;
   margin-bottom: 25px;
+}
+#logosSection .logosContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#logosSection .logosContainer img {
+  width: 100%;
+  height: 100%;
 }
 
 #signUpSection .blueHero {
@@ -396,6 +541,11 @@ p {
   font-family: "cera_problack";
   font-weight: 900;
   color: #011E55;
+}
+#signUpSection .blueHero button:hover {
+  background-color: rgb(123, 124, 128);
+  color: sienna;
+  transition: 0.7s;
 }
 
 #footerSection {

@@ -25,16 +25,59 @@ p{
         justify-content: space-between;
         align-items: center;
         padding-top: 20px;
+        @include mediaQuery(992px){
+            margin-bottom: 100px;
+        }
         .navlinks{
             display: none;
+            @include mediaQuery(992px){
+                display: flex;
+            }
+            a{
+                @include mediaQuery(992px){
+                    color: #FFF;
+                    margin: 0px 10px 0px 25px;
+                    font-size: 20px;
+                    font-family: 'cera_problack';
+                }
+            }
+            .secondNavlinks{
+                @include mediaQuery(992px){
+                    display: flex;
+                    margin-left: 230px;
+                }
+                #sunIcon{
+                    margin: 0px 30px 0px;
+                }
+                .searchDiv{
+                    padding: 5px 30px;
+                    border-radius: 25px;
+                    background-color: #FFF;
+                    @include flexAlignment();
+                    input{
+                        border: none;
+                        width: 65px;
+                        text-align: center;
+                        font-family: 'cera_problack';
+                        color: #011E55;
+                    }
+                } 
+            }
         }
         #logo{
-            width: 100px;
+            width: 125px;
             height: 40px;
+            @include mediaQuery(992px){
+                width: 200px;
+                height: 70px;
+            }
         }
         .menu-toggle{
             gap: 12px;
             @include flexAlignment();
+            @include mediaQuery(992px){
+                display: none;
+            }
             p{
                 font-size: 20px;
                 font-family: 'cera_problack';
@@ -55,12 +98,13 @@ p{
             }
         }
         .overlay{
-             background-color: rgb(88, 88, 172);
+             background-color: rgb(44, 78, 139);
              @include flexColumnWidthHeight100();
              position: fixed;
              top: 0;
              left: 0;
              z-index: 1000;
+             opacity: 0.98;
              #closeBttn{
                 position: relative;
                 bottom: 80px;
@@ -81,6 +125,9 @@ p{
                 font-family: 'cera_problack';
                 font-weight: 700;
                 padding: 20px 0px; 
+                &:hover{
+                    color: #011E55;
+                }
              }
              .link-icon{
                 @include flexAlignment();
@@ -123,6 +170,11 @@ p{
         #greenBttn{
             background-color: rgb(0, 132, 131);
             color: #FFF;
+            &:hover{
+                background-color: rgb(123, 124, 128);
+                color: sienna;
+                transition: 0.7s;
+            }
         }
        }
     }
@@ -135,6 +187,11 @@ p{
         width: 100%;
         height: 300px;
         bottom: 70px;
+        @include mediaQuery(992px){
+            width: 70%;
+            height: 600px;
+            left: 200px;
+        }
     }
     .girlphotoHloder{
         @include widthHeight100();
@@ -162,30 +219,46 @@ p{
 #getStartedSection{
     @include smallerSectionPadding();
     background-color: #FFF;
+    @include mediaQuery(992px){
+        padding-left: 35px;
+    }
     h2{
         @include h2font-size();
         margin-bottom: 60px
     }
-    .bluecardHolder{
-        @include flexColumnWidthHeight100();
-        background-color: #011E55;
-        padding: 20px 15px;
-        #circledNumbers{
-            position: relative;
-            bottom: 50px;
-            right: 150px;
+    .cardsHolder{
+        @include columnAlignment();
+        gap: 50px;
+        @include mediaQuery(992px){
+            flex-direction: row;
+            gap: 30px;
         }
-        #iconImage{
-            width: 128px;
-            height: 130px;
-            margin-bottom: 20px;
-        }
-        h3{
-            @include h3font-size();
-            color: #FFF;
-        }
-        p{
-            color: #FFF;
+        .bluecardHolder{
+            @include flexColumnWidthHeight100();
+            background-color: #011E55;
+            padding: 20px 15px;
+            #circledNumbers{
+                position: relative;
+                bottom: 50px;
+                right: 150px;
+                @include mediaQuery(992px){
+                    right: 210px;
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+            #iconImage{
+                width: 128px;
+                height: 130px;
+                margin-bottom: 20px;
+            }
+            h3{
+                @include h3font-size();
+                color: #FFF;
+            }
+            p{
+                color: #FFF;
+            }
         }
     }
     button{
@@ -195,6 +268,7 @@ p{
         margin: 40px 0px 0px 65px;
     }
 }
+
 #ResellmeFeaturesSection{
     @include smallerSectionPadding();
     background-color: #FFF;
@@ -253,6 +327,11 @@ p{
     h2{
         @include h2font-size();
         margin-bottom: 25px;
+        color: #FFF;
+    }
+    p{
+        color: #FFF;
+        margin-bottom: 35px;
     }
     .testimonialCards{
         background-color: #003F74;
@@ -279,13 +358,46 @@ p{
         }
     }
 }
+#accordionSection{
+    @include smallerSectionPadding();
+    h2{
+        @include h2font-size();
+    }
+    p{
+        margin: 37px 0px;
+    }
+}
 
 #logosSection{
-    @include smallerSectionPadding();
+    padding: 30px 15px 20px;
+    margin-top: 0px;
     h2{
         @include h2font-size();
         margin-bottom: 25px;
     }
+    .logosContainer{
+        @include flexAlignmentWidthHeight100();
+        img{
+            @include widthHeight100();
+        }
+    }
+    // .swiper .res-slide {
+    //     min-width: 300px;
+    //     max-width: 400px;
+    //     min-height: 350px;
+    //     // border: 2px solid hsl(210, 100%, 50%);
+    //     border-radius: 20px;
+    //   }
+    //   .res-slide img{
+
+    //   }
+    //   .swiper-nav-btns img {
+    //     width: 60px;
+    //     height: 60px;
+    //     margin: 0px 0.5rem;
+    //     margin-top: 30px;
+    //     transition: all .5s;
+    //   }
 }
 
 #signUpSection{

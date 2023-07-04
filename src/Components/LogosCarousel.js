@@ -15,28 +15,44 @@ function LogosCarousel() {
           slidesPerView="auto"
         >
           <SwiperSlide className="res-slide">
-                    <img src={ require("../Images/techZim.png") } alt="" />
+                  <div className="logosContainer">
+                    <img src={ require("../Images/techzim.png") } alt="" />
+                  </div>
           </SwiperSlide>
           <SwiperSlide className="res-slide">
-                    <img src={ require("../Images/technoMag.png") } alt="" /> 
+                  <div className="logosContainer">
+                    <img src={ require("../Images/techno.png") } alt="" /> 
+                    </div>
           </SwiperSlide>
           <SwiperSlide className="res-slide">
+                  <div className="logosContainer">
                     <img src={ require("../Images/econet.png") } alt="" />
+                    </div>
           </SwiperSlide>
           <SwiperSlide className="res-slide">
-                    <img src={ require("../Images/net.png") } alt="" />
+                  <div className="logosContainer">
+                    <img src={ require("../Images/netone.png") } alt="" />
+                    </div>
           </SwiperSlide>
           <SwiperSlide className="res-slide">
-                    <img src={ require("../Images/fourSemis.png") } alt="" />
+                  <div className="logosContainer">
+                    <img src={ require("../Images/union.png") } alt="" />
+                    </div>
           </SwiperSlide>
           <SwiperSlide className="res-slide">
-                    <img src={ require("../Images/two5logo.png") } alt="" />
+                  <div className="logosContainer">
+                    <img src={ require("../Images/825.png") } alt="" />
+                    </div>
           </SwiperSlide>
           <SwiperSlide className="res-slide">
-                    <img src={ require("../Images/chat263.png") } alt="" />
+                  <div className="logosContainer">
+                    <img src={ require("../Images/263.png") } alt="" />
+                    </div>
           </SwiperSlide>
           <SwiperSlide className="res-slide">
+                  <div className="logosContainer">
                     <img src={ require("../Images/cassava.png") } alt="" />
+                    </div>
           </SwiperSlide>
           
           <SwiperNavButtons/>

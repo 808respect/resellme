@@ -64,10 +64,28 @@
     font-size: 20px;
     font-family: 'cera_problack';
     font-weight: 900;
+    &:hover{
+        background-color: rgb(123, 124, 128);
+        color: sienna;
+        transition: 0.7s;
+    }
 }
 @mixin smallerSectionPadding{
      padding: 80px 15px;
 }
 @mixin largerSectionPadding{
     padding: 40px 25px 2px;
+}
+
+@mixin mediaQuery($breakpoint...){
+    @if length($breakpoint) == 1 {
+        @media (min-width: nth($breakpoint, 1)){
+            @content;
+        }
+    }
+    @if length($breakpoint) == 2{
+        @media (min-width: nth($breakpoint, 1)) and (max-width: nth($breakpoint, 2)){
+            @content;
+        }
+    }
 }

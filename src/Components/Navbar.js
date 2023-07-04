@@ -19,15 +19,15 @@ const [openOverlay, setOpenOverlay] = useState(false);
                  <a to="" >About Us</a>
                  <div className="secondNavlinks">
                       <div className="link-icon">
-                           <a to="" >Docs</a>
+                           <a to="" >Support</a>
                            <img src={ require("../Images/arrowOut.png") } alt="" />
                       </div>
                       <div className="link-icon">
-                           <a to="" >Docs</a>
+                           <a to="" >Portal</a>
                            <img src={ require("../Images/arrowOut.png") } alt="" />
                       </div>
-                      <div className="link-icon">
-                           <a to="" >Docs</a>
+                      <div className="link-icon spreadLink">
+                           <a to="" >Register</a>
                            <img src={ require("../Images/arrowOut.png") } alt="" />
                       </div>
                       <img id="sunIcon" onClick={ () =>  document.body.classList.toggle("dark-theme")} src={ require("../Images/darkmode.png") } alt="" />

@@ -3,6 +3,54 @@
   padding: 0;
 }
 
+a {
+  cursor: pointer;
+}
+
+#light {
+  background-color: #FFF;
+}
+#light nav #sunIcon {
+  color: #FFF;
+}
+
+#dark {
+  background-color: #011844;
+}
+#dark nav #sunIcon {
+  color: #011844;
+}
+#dark p {
+  color: #FFF;
+}
+#dark #waitWhatSection h2 {
+  color: #FFF;
+}
+#dark #getStartedSection h2 {
+  color: #FFF;
+}
+#dark #ResellmeFeaturesSection h2 {
+  color: #FFF;
+}
+#dark #ResellmeFeaturesSection h4 {
+  color: #FFF;
+}
+#dark #accordionSection h2 {
+  color: #FFF;
+}
+#dark h4 {
+  color: #FFF;
+}
+#dark #useCaseSection {
+  background-color: gray;
+}
+#dark #useCaseSection p {
+  color: #011844;
+}
+#dark #logosSection h2 {
+  color: #FFF;
+}
+
 p {
   color: #011E55;
   font-size: 22px;
@@ -29,12 +77,19 @@ p {
     margin-bottom: 100px;
   }
 }
+@media (min-width: 678px) and (max-width: 991px) {
+  #bilboardSection nav {
+    margin-bottom: 100px;
+  }
+}
 #bilboardSection nav .navlinks {
   display: none;
 }
 @media (min-width: 992px) {
   #bilboardSection nav .navlinks {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (min-width: 992px) {
@@ -44,6 +99,10 @@ p {
     font-size: 20px;
     font-family: "cera_problack";
   }
+  #bilboardSection nav .navlinks a:hover {
+    color: #011E55;
+    transition: 0.5s;
+  }
 }
 @media (min-width: 992px) {
   #bilboardSection nav .navlinks .secondNavlinks {
@@ -51,8 +110,16 @@ p {
     margin-left: 230px;
   }
 }
+#bilboardSection nav .navlinks .secondNavlinks .link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #bilboardSection nav .navlinks .secondNavlinks #sunIcon {
   margin: 0px 30px 0px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
 }
 #bilboardSection nav .navlinks .secondNavlinks .searchDiv {
   padding: 5px 30px;
@@ -79,6 +146,12 @@ p {
     height: 70px;
   }
 }
+@media (min-width: 678px) and (max-width: 991px) {
+  #bilboardSection nav #logo {
+    width: 200px;
+    height: 70px;
+  }
+}
 #bilboardSection nav .menu-toggle {
   gap: 12px;
   display: flex;
@@ -96,6 +169,11 @@ p {
   color: #FFF;
   font-weight: 900;
 }
+@media (min-width: 678px) and (max-width: 991px) {
+  #bilboardSection nav .menu-toggle p {
+    font-size: 35px;
+  }
+}
 #bilboardSection nav .menu-toggle #toggleBttn {
   display: flex;
   flex-direction: column;
@@ -103,11 +181,22 @@ p {
   height: 30px;
   justify-content: space-between;
 }
+@media (min-width: 678px) and (max-width: 991px) {
+  #bilboardSection nav .menu-toggle #toggleBttn {
+    width: 60px;
+    height: 45px;
+  }
+}
 #bilboardSection nav .menu-toggle #toggleBttn .bars {
   background-color: #FFF;
   width: 100%;
   height: 4px;
   border-radius: 20px;
+}
+@media (min-width: 678px) and (max-width: 991px) {
+  #bilboardSection nav .menu-toggle #toggleBttn .bars {
+    height: 7px;
+  }
 }
 #bilboardSection nav .overlay {
   background-color: rgb(44, 78, 139);
@@ -137,6 +226,15 @@ p {
 #bilboardSection nav .overlay #closeBttn:hover {
   background-color: #011E55;
 }
+@media (min-width: 678px) and (max-width: 991px) {
+  #bilboardSection nav .overlay #closeBttn {
+    bottom: 40px;
+    left: 300px;
+    font-size: 45px;
+    padding: 0px 40px;
+    border-radius: 40px;
+  }
+}
 #bilboardSection nav .overlay a {
   color: #FFF;
   font-size: 26px;
@@ -146,6 +244,18 @@ p {
 }
 #bilboardSection nav .overlay a:hover {
   color: #011E55;
+}
+@media (min-width: 678px) and (max-width: 991px) {
+  #bilboardSection nav .overlay a {
+    font-size: 45px;
+    padding: 24px 0px;
+  }
+}
+#bilboardSection nav .overlay #sunIcon {
+  margin: 0px 30px 0px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
 }
 #bilboardSection nav .overlay .link-icon {
   display: flex;
@@ -161,6 +271,12 @@ p {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+}
+@media (min-width: 678px) and (max-width: 991px) {
+  #bilboardSection nav .overlay .searchDiv {
+    margin-top: 40px;
+    padding: 13px 80px;
+  }
 }
 #bilboardSection nav .overlay .searchDiv input {
   border: none;
@@ -199,6 +315,7 @@ p {
   font-family: "cera_problack";
   font-weight: 900;
   color: #011E55;
+  background-color: #FFF;
 }
 #bilboardSection #heroSection .bttnContainer button:hover {
   background-color: rgb(123, 124, 128);
@@ -217,7 +334,6 @@ p {
 
 #waitWhatSection {
   padding: 0px 15px;
-  background-color: #FFF;
 }
 #waitWhatSection #laptop {
   position: relative;
@@ -232,6 +348,11 @@ p {
     left: 200px;
   }
 }
+@media (min-width: 678px) and (max-width: 991px) {
+  #waitWhatSection #laptop {
+    height: 600px;
+  }
+}
 #waitWhatSection .girlphotoHloder {
   width: 100%;
   height: 100%;
@@ -239,6 +360,11 @@ p {
 #waitWhatSection .girlphotoHloder img {
   width: 100%;
   height: 100%;
+}
+@media (min-width: 678px) and (max-width: 991px) {
+  #waitWhatSection .girlphotoHloder img {
+    height: 80%;
+  }
 }
 #waitWhatSection .textHolder {
   display: flex;
@@ -248,6 +374,11 @@ p {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+}
+@media (min-width: 678px) and (max-width: 991px) {
+  #waitWhatSection .textHolder {
+    justify-content: start;
+  }
 }
 #waitWhatSection .textHolder h2 {
   font-family: "cera_problack";
@@ -278,11 +409,15 @@ p {
 
 #getStartedSection {
   padding: 80px 15px;
-  background-color: #FFF;
 }
 @media (min-width: 992px) {
   #getStartedSection {
     padding-left: 35px;
+  }
+}
+@media (min-width: 678px) and (max-width: 991px) {
+  #getStartedSection {
+    padding-left: 60px;
   }
 }
 #getStartedSection h2 {
@@ -328,6 +463,13 @@ p {
     height: 60px;
   }
 }
+@media (min-width: 678px) and (max-width: 991px) {
+  #getStartedSection .cardsHolder .bluecardHolder #circledNumbers {
+    right: 340px;
+    width: 95px;
+    height: 95px;
+  }
+}
 #getStartedSection .cardsHolder .bluecardHolder #iconImage {
   width: 128px;
   height: 130px;
@@ -358,13 +500,47 @@ p {
   color: sienna;
   transition: 0.7s;
 }
+@media (min-width: 678px) and (max-width: 991px) {
+  #getStartedSection button {
+    margin: 70px 0px 0px 210px;
+  }
+}
+@media (min-width: 992px) {
+  #getStartedSection button {
+    margin: 70px 0px 0px 580px;
+  }
+}
 
 #ResellmeFeaturesSection {
   padding: 80px 15px;
-  background-color: #FFF;
+}
+@media (min-width: 678px) and (max-width: 991px) {
+  #ResellmeFeaturesSection p {
+    text-align: left;
+    font-size: 17px;
+  }
+}
+@media (min-width: 992px) {
+  #ResellmeFeaturesSection {
+    padding: 0px 15px 30px;
+  }
+}
+#ResellmeFeaturesSection .resellmeHeadingHolder {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
 }
 #ResellmeFeaturesSection .resellmeHeadingHolder p {
   text-align: left;
+}
+@media (min-width: 678px) and (max-width: 991px) {
+  #ResellmeFeaturesSection .resellmeHeadingHolder p {
+    width: 90%;
+  }
 }
 #ResellmeFeaturesSection h2 {
   font-family: "cera_problack";
@@ -372,6 +548,11 @@ p {
   text-align: center;
   font-size: 35px;
   font-weight: 900;
+}
+@media (min-width: 678px) and (max-width: 991px) {
+  #ResellmeFeaturesSection h2 {
+    text-align: left;
+  }
 }
 #ResellmeFeaturesSection .featuresPropHolder {
   display: flex;
@@ -381,6 +562,17 @@ p {
   align-items: center;
   justify-content: center;
   margin: 30px 0px;
+}
+@media (min-width: 678px) and (max-width: 991px) {
+  #ResellmeFeaturesSection .featuresPropHolder {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0px 0px;
+  }
+  #ResellmeFeaturesSection .featuresPropHolder img {
+    width: 80px;
+    height: 80px;
+  }
 }
 #ResellmeFeaturesSection .featuresPropHolder h4 {
   color: #011E55;
@@ -444,9 +636,32 @@ p {
   margin-bottom: 25px;
   color: #FFF;
 }
+@media (min-width: 678px) and (max-width: 991px) {
+  #testimonialSection h2 {
+    margin-top: 170px;
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  #testimonialSection h2 {
+    margin-top: 170px;
+    text-align: left;
+  }
+}
 #testimonialSection p {
   color: #FFF;
   margin-bottom: 35px;
+}
+@media (min-width: 678px) and (max-width: 991px) {
+  #testimonialSection p {
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  #testimonialSection p {
+    text-align: left;
+    width: 90%;
+  }
 }
 #testimonialSection .testimonialCards {
   background-color: #003F74;
@@ -484,8 +699,18 @@ p {
   font-size: 35px;
   font-weight: 900;
 }
+@media (min-width: 992px) {
+  #accordionSection h2 {
+    text-align: left;
+  }
+}
 #accordionSection p {
   margin: 37px 0px;
+}
+@media (min-width: 992px) {
+  #accordionSection p {
+    text-align: left;
+  }
 }
 
 #logosSection {
@@ -552,13 +777,38 @@ p {
   background-color: #303846;
   padding: 40px 25px 2px;
 }
+@media (min-width: 678px) and (max-width: 991px) {
+  #footerSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
 #footerSection #footerLogo {
   margin-left: 15%;
+}
+@media (min-width: 678px) and (max-width: 991px) {
+  #footerSection #footerLogo {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  #footerSection #footerLogo {
+    display: none;
+  }
 }
 #footerSection .footerTextHolder {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+}
+@media (min-width: 992px) {
+  #footerSection .footerTextHolder {
+    padding-left: 130px;
+  }
 }
 #footerSection .footerTextHolder h6 {
   color: #FFF;
@@ -571,8 +821,18 @@ p {
   text-align: left;
   margin: 7px 0px;
 }
+#footerSection .footerTextHolder a:hover {
+  color: #011E55;
+}
 #footerSection .link-icon {
   margin: 7px 0px;
+  display: flex;
+  align-items: center;
+}
+#footerSection .link-icon img {
+  width: 30px;
+  height: 30px;
+  margin-left: 7px;
 }
 #footerSection p {
   color: #FFF;
@@ -586,10 +846,15 @@ p {
   border-radius: 20px;
 }
 
+.swiper-nav-btns {
+  display: flex;
+}
+
 .swiper-nav-btns img {
   width: 60px;
   height: 60px;
   margin: 0px 0.5rem;
   margin-top: 30px;
   transition: all 0.5s;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

@@ -4,7 +4,67 @@
     margin: 0;
     padding: 0;
 }
+a{
+    cursor: pointer;
+}
 
+// DARK-THEME
+#light{
+    background-color: #FFF;
+    nav{
+        #sunIcon{
+            color: #FFF;
+        }
+    }
+}
+#dark{
+    background-color: #011844;
+    nav{
+        #sunIcon{
+            color:  #011844;;
+        }
+    }
+    p{
+        color: #FFF;
+    }
+    #waitWhatSection{
+        h2{
+            color: #FFF; 
+        }
+    }
+    #getStartedSection{
+        h2{
+            color: #FFF; 
+        }
+    }
+    #ResellmeFeaturesSection{
+        h2{
+            color: #FFF; 
+        }
+        h4{
+            color: #FFF; 
+        }
+    }
+    #accordionSection{
+        h2{
+            color: #FFF; 
+        }
+    }
+    h4{
+        color: #FFF;
+    }
+    #useCaseSection{
+        background-color: gray;
+        p{
+            color: #011844;
+        }
+    }
+    #logosSection{
+        h2{
+            color: #FFF; 
+        }
+    }
+}
 
 p{
     color: #011E55;
@@ -28,10 +88,13 @@ p{
         @include mediaQuery(992px){
             margin-bottom: 100px;
         }
+        @include mediaQuery(678px, 991px){
+                 margin-bottom: 100px;
+        }
         .navlinks{
             display: none;
             @include mediaQuery(992px){
-                display: flex;
+                @include flexAlignment();
             }
             a{
                 @include mediaQuery(992px){
@@ -39,6 +102,10 @@ p{
                     margin: 0px 10px 0px 25px;
                     font-size: 20px;
                     font-family: 'cera_problack';
+                    &:hover{
+                        color: #011E55;
+                        transition: 0.5s;
+                    }
                 }
             }
             .secondNavlinks{
@@ -46,8 +113,14 @@ p{
                     display: flex;
                     margin-left: 230px;
                 }
+                .link-icon{
+                    @include flexAlignment();
+                }
                 #sunIcon{
                     margin: 0px 30px 0px;
+                    width: 45px;
+                    height: 45px;
+                    cursor: pointer;
                 }
                 .searchDiv{
                     padding: 5px 30px;
@@ -71,6 +144,10 @@ p{
                 width: 200px;
                 height: 70px;
             }
+             @include mediaQuery(678px, 991px){
+                width: 200px;
+                height: 70px;
+            }
         }
         .menu-toggle{
             gap: 12px;
@@ -83,17 +160,27 @@ p{
                 font-family: 'cera_problack';
                 color: #FFF;
                 font-weight: 900;
+                @include mediaQuery(678px, 991px){
+                    font-size: 35px;
+                }
             }
             #toggleBttn{
                 @include flexColumn();
                 width: 35px;
                 height: 30px;
                 justify-content: space-between;
+                @include mediaQuery(678px, 991px){
+                     width: 60px;
+                     height: 45px;
+                }
                 .bars{
                     background-color: #FFF;
                     width: 100%;
                     height: 4px;
                     border-radius: 20px;
+                    @include mediaQuery(678px, 991px){
+                        height: 7px;
+                    }
                 }
             }
         }
@@ -118,6 +205,13 @@ p{
                 &:hover{
                     background-color: #011E55;
                 }
+                @include mediaQuery(678px, 991px){
+                    bottom: 40px;
+                    left: 300px;
+                    font-size: 45px;
+                     padding: 0px 40px;
+                       border-radius: 40px;
+                }
              }
              a{
                 color: #FFF;
@@ -128,7 +222,17 @@ p{
                 &:hover{
                     color: #011E55;
                 }
+                @include mediaQuery(678px, 991px){
+                    font-size: 45px;
+                    padding: 24px 0px; 
+                }
              }
+             #sunIcon{
+                margin: 0px 30px 0px;
+                width: 45px;
+                height: 45px;
+                cursor: pointer;
+            }
              .link-icon{
                 @include flexAlignment();
                 gap: 7px;
@@ -139,6 +243,10 @@ p{
                 background-color: #FFF;
                 @include flexAlignment();
                 margin-top: 20px;
+                @include mediaQuery(678px, 991px){
+                    margin-top: 40px;
+                    padding: 13px 80px;
+                }
                 input{
                     border: none;
                     width: 65px;
@@ -166,6 +274,7 @@ p{
         button{
             @include projectButtons();
             color: #011E55;
+            background-color: #FFF;
         }
         #greenBttn{
             background-color: rgb(0, 132, 131);
@@ -181,7 +290,6 @@ p{
 }
 #waitWhatSection{
     padding: 0px 15px;
-    background-color: #FFF;
     #laptop{
         position: relative;
         width: 100%;
@@ -192,16 +300,25 @@ p{
             height: 600px;
             left: 200px;
         }
+        @include mediaQuery(678px, 991px){
+             height: 600px; 
+        }
     }
     .girlphotoHloder{
         @include widthHeight100();
         img{
             @include widthHeight100();
+            @include mediaQuery(678px, 991px){
+               height: 80%; 
+            }
         }
     }
     .textHolder{
         @include flexColumnWidthHeight100();
         margin-top: 20px;
+        @include mediaQuery(678px, 991px){
+            justify-content: start;
+        }
         h2{
             @include h2font-size();
         }
@@ -218,9 +335,11 @@ p{
 }
 #getStartedSection{
     @include smallerSectionPadding();
-    background-color: #FFF;
     @include mediaQuery(992px){
         padding-left: 35px;
+    }
+    @include mediaQuery(678px, 991px){
+        padding-left: 60px;
     }
     h2{
         @include h2font-size();
@@ -246,6 +365,11 @@ p{
                     width: 60px;
                     height: 60px;
                 }
+                @include mediaQuery(678px, 991px){
+                    right: 340px;
+                    width: 95px;
+                    height: 95px;
+                }
             }
             #iconImage{
                 width: 128px;
@@ -266,23 +390,54 @@ p{
         background-color: #011E55;
         color: #FFF;
         margin: 40px 0px 0px 65px;
+        @include mediaQuery(678px, 991px){
+            margin: 70px 0px 0px 210px;
+        }
+        @include mediaQuery(992px){
+            margin: 70px 0px 0px 580px;
+        }
     }
 }
 
 #ResellmeFeaturesSection{
     @include smallerSectionPadding();
-    background-color: #FFF;
-    .resellmeHeadingHolder{
+    @include mediaQuery(678px, 991px){
         p{
             text-align: left;
+            font-size: 17px;
+        }
+    }
+    @include mediaQuery(992px){
+        padding: 0px 15px 30px;
+    }
+    .resellmeHeadingHolder{
+        @include flexColumnWidthHeight100();
+        align-items: flex-start;
+        p{
+            text-align: left;
+            @include mediaQuery(678px, 991px){
+                 width: 90%;
+            }
         }
     }
     h2{
         @include h2font-size();
+        @include mediaQuery(678px, 991px){
+             text-align: left;
+        }
     }
     .featuresPropHolder{
         @include flexColumnWidthHeight100();
         margin: 30px 0px;
+        @include mediaQuery(678px, 991px){
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 0px 0px;
+            img{
+                width: 80px;
+                height: 80px;
+            }
+        }
         h4{
             color: #011E55;
             font-size: 28px;
@@ -328,10 +483,25 @@ p{
         @include h2font-size();
         margin-bottom: 25px;
         color: #FFF;
+        @include mediaQuery(678px, 991px){
+            margin-top: 170px;
+            text-align: left;
+       }
+       @include mediaQuery(992px){
+            margin-top: 170px;
+            text-align: left;
+       }
     }
     p{
         color: #FFF;
         margin-bottom: 35px;
+        @include mediaQuery(678px, 991px){
+            text-align: left;
+       }
+       @include mediaQuery(992px){
+          text-align: left;
+          width: 90%;
+       }
     }
     .testimonialCards{
         background-color: #003F74;
@@ -362,9 +532,15 @@ p{
     @include smallerSectionPadding();
     h2{
         @include h2font-size();
+        @include mediaQuery(992px){
+            text-align: left;
+         }
     }
     p{
         margin: 37px 0px;
+        @include mediaQuery(992px){
+            text-align: left;
+         }
     }
 }
 
@@ -381,23 +557,6 @@ p{
             @include widthHeight100();
         }
     }
-    // .swiper .res-slide {
-    //     min-width: 300px;
-    //     max-width: 400px;
-    //     min-height: 350px;
-    //     // border: 2px solid hsl(210, 100%, 50%);
-    //     border-radius: 20px;
-    //   }
-    //   .res-slide img{
-
-    //   }
-    //   .swiper-nav-btns img {
-    //     width: 60px;
-    //     height: 60px;
-    //     margin: 0px 0.5rem;
-    //     margin-top: 30px;
-    //     transition: all .5s;
-    //   }
 }
 
 #signUpSection{
@@ -425,12 +584,24 @@ p{
 #footerSection{
     background-color: #303846;
     @include largerSectionPadding();
+    @include mediaQuery(678px, 991px){
+        @include flexColumnWidthHeight100();
+    }
     #footerLogo{
         margin-left: 15%;
+        @include mediaQuery(678px, 991px){
+            display: none;
+        }
+        @include mediaQuery(992px){
+            display: none;
+         }
     }
     .footerTextHolder{
         @include flexColumn();
         margin-top: 30px;
+        @include mediaQuery(992px){
+            padding-left: 130px;
+         }
         h6{
             color: #FFF;
             font-size: 34px;
@@ -441,10 +612,20 @@ p{
             color: #FFF;
             text-align: left;
             margin: 7px 0px;
+            &:hover{
+                color: #011E55;
+            }
         }
     }
     .link-icon{
-            margin: 7px 0px;
+        margin: 7px 0px;
+        display: flex;
+        align-items: center;
+        img{
+            width: 30px;
+            height: 30px;
+            margin-left: 7px;
+        }
     }
     p{
         color: #FFF;
@@ -458,23 +639,22 @@ p{
     min-width: 300px;
     max-width: 400px;
     min-height: 350px;
-    // border: 2px solid hsl(210, 100%, 50%);
     border-radius: 20px;
   }
-  
+  .swiper-nav-btns{
+    display: flex;
+  }
+
   .swiper-nav-btns img {
     width: 60px;
     height: 60px;
     margin: 0px 0.5rem;
     margin-top: 30px;
     transition: all .5s;
+    cursor: pointer;
   }
   
-//   .swiper-nav-btns button:hover {
-//     background-color: hsl(210, 100%, 40%);
-//     cursor: pointer;
-//   }
-  
+
 
 
 

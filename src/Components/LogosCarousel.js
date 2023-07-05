@@ -3,7 +3,7 @@
 import { A11y, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { SwiperNavButtons } from './CarouselBttns';
-import {techzim} from '../Images/techzim.png'
+
 
 
 function LogosCarousel() {
@@ -15,14 +15,15 @@ function LogosCarousel() {
           spaceBetween={30}
           slidesPerView="auto"
         >
+         
           <SwiperSlide className="res-slide">
                   <div className="logosContainer">
-                   <img src={techzim} alt="" />
-                  </div>
+                    <img src={ require("../Images/zimbaTech.png") } alt="" />
+                    </div>
           </SwiperSlide>
           <SwiperSlide className="res-slide">
                   <div className="logosContainer">
-                    <img src={ require("../Images/techno.png") } alt="" /> 
+                    <img src={ require("../Images/techno.png") } alt="" />
                     </div>
           </SwiperSlide>
           <SwiperSlide className="res-slide">
@@ -64,3 +65,9 @@ function LogosCarousel() {
 }
 
 export default LogosCarousel;
+
+{/* <SwiperSlide className="res-slide">
+                  <div className="logosContainer">
+                    <img src={ require("../Images/techno.png") } alt="" /> 
+                    </div>
+          </SwiperSlide> */}

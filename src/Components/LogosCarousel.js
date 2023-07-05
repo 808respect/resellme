@@ -3,6 +3,7 @@
 import { A11y, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { SwiperNavButtons } from './CarouselBttns';
+import {techzim} from '../Images/techzim.png'
 
 
 function LogosCarousel() {
@@ -16,7 +17,7 @@ function LogosCarousel() {
         >
           <SwiperSlide className="res-slide">
                   <div className="logosContainer">
-                    <img src={ require("../Images/techzim.png") } alt="" />
+                   <img src={techzim} alt="" />
                   </div>
           </SwiperSlide>
           <SwiperSlide className="res-slide">

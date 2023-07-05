@@ -1,5 +1,4 @@
 
-
 import "../src/fonts/stylesheet.css";
 import Navbar from './Components/Navbar';
 import GetStarted from "./Components/GetStarted";
@@ -9,17 +8,30 @@ import TestimonialCarousel from "./Components/TestimonialCarousel";
 import LogosCarousel from "./Components/LogosCarousel";
 import Footer from "./Components/Footer";
 import Accordionne from "./Components/Accordionne";
+import { createContext, useState } from "react";
+
+
+
+export const ThemeContext = createContext(null);
 
 function App() {
 
-     
+     const [Theme, setTheme] = useState("light");
+
+   const toggleTheme = () => {
+
+     setTheme( (curr) => ( curr === "light" ? "dark" : "light" ));
+   }; 
 
 
   return (
-    <div className="App">
+     <ThemeContext.Provider value={{Theme, toggleTheme}}>
+
+    <div className="App" id={ Theme }>
+
          <div className="landingPage">
               <section id="bilboardSection">
-                       <Navbar />
+                       <Navbar toggleTheme={toggleTheme}/>
                        <div id="heroSection">
                             <h1>Buy and sell domains with no capital!</h1>
                             <p>Resellme allows you to buy and sell domains keeping the profits, all in under 5 minutes.</p>
@@ -70,9 +82,15 @@ function App() {
                        </div>
               </section>
               <section id="accordionSection">
-                      <h2>Frequently Asked Questions</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                      <Accordionne />
+               <div className="row">
+                    <div className="col-lg-6">
+                         <h2>Frequently Asked Questions</h2>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                    <div className="col-lg-6">
+                         <Accordionne />
+                    </div>
+               </div>
               </section>
               <section id="logosSection">
                        <h2>We’ve Been Featured In</h2>
@@ -95,6 +113,7 @@ function App() {
           
          </div>
     </div>
+    </ThemeContext.Provider>
   );
 }
 

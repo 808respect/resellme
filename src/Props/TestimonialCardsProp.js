@@ -4,7 +4,7 @@ const TestimonialCardsProp = (props) => {
     return ( 
 
         <div className="testimonialCards">
-             <img src={props.image} alt="" />
+             <img style={{width: "100%", height: "250px"}} src={props.image} alt="" />
              <img id="commas" src={props.commas} alt="" />
              <div className="cardTextHolder">
                     <h6>{props.h6}</h6>

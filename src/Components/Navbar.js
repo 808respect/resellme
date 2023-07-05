@@ -1,12 +1,12 @@
 
 import { useState } from "react";
 import Overlay from "./Overlay";
+import {SunIcon} from '@chakra-ui/icons'
 
-const Navbar = () => {
+
+const Navbar = ({toggleTheme}) => {
 
 const [openOverlay, setOpenOverlay] = useState(false);
-
-
 
 
     return ( 
@@ -30,7 +30,7 @@ const [openOverlay, setOpenOverlay] = useState(false);
                            <a to="" >Register</a>
                            <img src={ require("../Images/arrowOut.png") } alt="" />
                       </div>
-                      <img id="sunIcon" onClick={ () =>  document.body.classList.toggle("dark-theme")} src={ require("../Images/darkmode.png") } alt="" />
+                       <SunIcon id="sunIcon" onClick={toggleTheme}/>
                       <div className="searchDiv">
                            <img src={ require("../Images/search.png") } alt="" /> <input type="text" placeholder="Search" />
                       </div>
@@ -44,7 +44,7 @@ const [openOverlay, setOpenOverlay] = useState(false);
                       <div className="bars"></div>
                  </div>
             </div>
-            { openOverlay && <Overlay setOpenOverlay={setOpenOverlay} />}
+            { openOverlay && <Overlay setOpenOverlay={setOpenOverlay} toggleTheme= {toggleTheme}/>}
 
           
         </nav>

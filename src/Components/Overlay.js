@@ -1,6 +1,7 @@
 
+import {SunIcon} from '@chakra-ui/icons'
 
-const Overlay = ({ setOpenOverlay }) => {
+const Overlay = ({ setOpenOverlay, toggleTheme}) => {
 
     return ( 
 
@@ -21,7 +22,7 @@ const Overlay = ({ setOpenOverlay }) => {
                       <a to="" >Register</a>
                       <a href=""><img src={ require("../Images/arrowOut.png") } alt="" /></a>
                 </div>
-                <img src={ require("../Images/darkmode.png") } alt="" />
+                   <SunIcon id="sunIcon" onClick={toggleTheme}/>
                 <div className="searchDiv">
                      <img src={ require("../Images/search.png") } alt="" /> <input type="text" placeholder="Search" />
                 </div>
@@ -30,3 +31,6 @@ const Overlay = ({ setOpenOverlay }) => {
 }
  
 export default Overlay;
+
+
+

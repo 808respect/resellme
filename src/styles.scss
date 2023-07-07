@@ -47,8 +47,16 @@ a{
         }
     }
     #accordionSection{
+        #textContainer{
+            p{
+                color: #FFF;
+            }
+        }
         h2{
             color: #FFF; 
+        }
+        p{
+            color: #011E55;
         }
     }
     h4{
@@ -86,19 +94,22 @@ p{
         justify-content: space-between;
         align-items: center;
         padding-top: 20px;
-        @include mediaQuery(992px){
+        @include mediaQuery(1200px){
             margin-bottom: 100px;
         }
         @include mediaQuery(678px, 991px){
                  margin-bottom: 100px;
         }
+        @include mediaQuery(992px, 1199px){
+            margin-bottom: 100px;
+        }
         .navlinks{
             display: none;
-            @include mediaQuery(992px){
+            @include mediaQuery(1200px){
                 @include flexAlignment();
             }
             a{
-                @include mediaQuery(992px){
+                @include mediaQuery(1200px){
                     color: #FFF;
                     margin: 0px 10px 0px 25px;
                     font-size: 20px;
@@ -110,7 +121,7 @@ p{
                 }
             }
             .secondNavlinks{
-                @include mediaQuery(992px){
+                @include mediaQuery(1200px){
                     display: flex;
                     margin-left: 230px;
                 }
@@ -141,7 +152,7 @@ p{
         #logo{
             width: 125px;
             height: 40px;
-            @include mediaQuery(992px){
+            @include mediaQuery(1200px){
                 width: 200px;
                 height: 70px;
             }
@@ -149,12 +160,19 @@ p{
                 width: 200px;
                 height: 70px;
             }
+            @include mediaQuery(992px, 1199px){
+                width: 250px;
+                height: 90px;
+            }
         }
         .menu-toggle{
             gap: 12px;
             @include flexAlignment();
-            @include mediaQuery(992px){
+            @include mediaQuery(1200px){
                 display: none;
+            }
+            @include mediaQuery(992px, 1199px){
+               gap: 30px;
             }
             p{
                 font-size: 20px;
@@ -163,6 +181,9 @@ p{
                 font-weight: 900;
                 @include mediaQuery(678px, 991px){
                     font-size: 35px;
+                }
+                @include mediaQuery(992px, 1199px){
+                    font-size: 40px;
                 }
             }
             #toggleBttn{
@@ -174,12 +195,19 @@ p{
                      width: 60px;
                      height: 45px;
                 }
+                @include mediaQuery(992px, 1199px){
+                    width: 60px;
+                     height: 45px;
+                }
                 .bars{
                     background-color: #FFF;
                     width: 100%;
                     height: 4px;
                     border-radius: 20px;
                     @include mediaQuery(678px, 991px){
+                        height: 7px;
+                    }
+                    @include mediaQuery(992px, 1199px){
                         height: 7px;
                     }
                 }
@@ -193,6 +221,10 @@ p{
              left: 0;
              z-index: 1000;
              opacity: 0.98;
+             @include mediaQuery(992px, 1199px){
+                justify-content: flex-start;
+                padding-top: 40px;
+             }
              #closeBttn{
                 position: relative;
                 bottom: 80px;
@@ -213,6 +245,13 @@ p{
                      padding: 0px 40px;
                        border-radius: 40px;
                 }
+                @include mediaQuery(992px, 1199px){
+                    bottom: 0px;
+                    left: 400px;
+                    font-size: 45px;
+                    padding: 0px 40px;
+                    border-radius: 40px;
+                }
              }
              a{
                 color: #FFF;
@@ -226,6 +265,10 @@ p{
                 @include mediaQuery(678px, 991px){
                     font-size: 45px;
                     padding: 24px 0px; 
+                }
+                @include mediaQuery(992px, 1199px){
+                    margin: 0px 10px 0px 25px;
+                    font-size: 50px;
                 }
              }
              #sunIcon{
@@ -247,6 +290,10 @@ p{
                 @include mediaQuery(678px, 991px){
                     margin-top: 40px;
                     padding: 13px 80px;
+                }
+                @include mediaQuery(992px, 1199px){
+                    margin-top: 40px;
+                    padding: 13px 130px;
                 }
                 input{
                     border: none;
@@ -296,7 +343,7 @@ p{
         width: 100%;
         height: 300px;
         bottom: 70px;
-        @include mediaQuery(992px){
+        @include mediaQuery(1200px){
             width: 70%;
             height: 600px;
             left: 200px;
@@ -304,6 +351,11 @@ p{
         @include mediaQuery(678px, 991px){
              height: 600px; 
         }
+        @include mediaQuery(992px, 1199px){
+            width: 85%;
+            height: 500px;
+            left: 83px;
+         }
     }
     .girlphotoHloder{
         @include widthHeight100();
@@ -336,12 +388,15 @@ p{
 }
 #getStartedSection{
     @include smallerSectionPadding();
-    @include mediaQuery(992px){
+    @include mediaQuery(1200px){
         padding-left: 35px;
     }
     @include mediaQuery(678px, 991px){
         padding-left: 60px;
     }
+    @include mediaQuery(992px, 1199px){
+        padding-left: 60px;
+     }
     h2{
         @include h2font-size();
         margin-bottom: 60px
@@ -349,7 +404,7 @@ p{
     .cardsHolder{
         @include columnAlignment();
         gap: 50px;
-        @include mediaQuery(992px){
+        @include mediaQuery(1200px){
             flex-direction: row;
             gap: 30px;
         }
@@ -361,7 +416,7 @@ p{
                 position: relative;
                 bottom: 50px;
                 right: 150px;
-                @include mediaQuery(992px){
+                @include mediaQuery(1200px){
                     right: 210px;
                     width: 60px;
                     height: 60px;
@@ -371,6 +426,11 @@ p{
                     width: 95px;
                     height: 95px;
                 }
+                @include mediaQuery(992px, 1199px){
+                    right: 460px;
+                    width: 120px;
+                    height: 120px;
+                 }
             }
             #iconImage{
                 width: 128px;
@@ -394,9 +454,12 @@ p{
         @include mediaQuery(678px, 991px){
             margin: 70px 0px 0px 210px;
         }
-        @include mediaQuery(992px){
+        @include mediaQuery(1200px){
             margin: 70px 0px 0px 580px;
         }
+        @include mediaQuery(992px, 1199px){
+            margin: 70px 0px 0px 350px;
+         }
     }
 }
 
@@ -408,9 +471,12 @@ p{
             font-size: 17px;
         }
     }
-    @include mediaQuery(992px){
+    @include mediaQuery(1200px){
         padding: 0px 15px 30px;
     }
+    @include mediaQuery(992px, 1199px){
+        padding: 0px 15px 30px;
+     }
     .resellmeHeadingHolder{
         @include flexColumnWidthHeight100();
         align-items: flex-start;
@@ -438,6 +504,11 @@ p{
                 width: 80px;
                 height: 80px;
             }
+        }
+        @include mediaQuery(992px, 1199px){
+            justify-content: flex-start;
+            justify-content: flex-start;
+            margin: 10px 0px;
         }
         h4{
             color: #011E55;
@@ -473,7 +544,13 @@ p{
             @include projectButtons();
             background-color: #011E55;
             color: #FFF;
+            width: 100%;
         }
+    }
+    .swiper-nav-btns{
+        display: flex;
+        width: 100%;
+        justify-content: center;
     }
 }
 
@@ -488,7 +565,7 @@ p{
             margin-top: 170px;
             text-align: left;
        }
-       @include mediaQuery(992px){
+       @include mediaQuery(1200px){
             margin-top: 170px;
             text-align: left;
        }
@@ -499,7 +576,7 @@ p{
         @include mediaQuery(678px, 991px){
             text-align: left;
        }
-       @include mediaQuery(992px){
+       @include mediaQuery(1200px){
           text-align: left;
           width: 90%;
        }
@@ -528,18 +605,25 @@ p{
             }   color: #FFF;
         }
     }
+    .swiper-nav-btns{
+        width: 100%;
+        justify-content: center;
+    }
 }
 #accordionSection{
     @include smallerSectionPadding();
+    #textContainer{
+        @include widthHeight100();
+        p{
+            margin: 37px 0px;
+            @include mediaQuery(1200px){
+                text-align: left;
+             }
+        }
+    }
     h2{
         @include h2font-size();
-        @include mediaQuery(992px){
-            text-align: left;
-         }
-    }
-    p{
-        margin: 37px 0px;
-        @include mediaQuery(992px){
+        @include mediaQuery(1200px){
             text-align: left;
          }
     }
@@ -557,6 +641,10 @@ p{
         img{
             @include widthHeight100();
         }
+    }
+    .swiper-nav-btns{
+        width: 100%;
+        justify-content: center;
     }
 }
 
@@ -579,6 +667,7 @@ p{
         button{
             @include projectButtons();
             color: #011E55;
+            background-color: #FFF;
         }
     }
 }
@@ -593,16 +682,25 @@ p{
         @include mediaQuery(678px, 991px){
             display: none;
         }
-        @include mediaQuery(992px){
+        @include mediaQuery(1200px){
             display: none;
-         }
+        }
+        @include mediaQuery(992px, 1199px){
+            display: none;
+        }
     }
     .footerTextHolder{
         @include flexColumn();
         margin-top: 30px;
-        @include mediaQuery(992px){
+        @include mediaQuery(678px, 991px){
+            padding-left: 30px;
+        }
+        @include mediaQuery(1200px){
             padding-left: 130px;
-         }
+        }
+        @include mediaQuery(992px, 1199px){
+            padding-left: 50px;
+        }
         h6{
             color: #FFF;
             font-size: 34px;

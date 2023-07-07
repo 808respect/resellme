@@ -36,8 +36,14 @@ a {
 #dark #ResellmeFeaturesSection h4 {
   color: #FFF;
 }
+#dark #accordionSection #textContainer p {
+  color: #FFF;
+}
 #dark #accordionSection h2 {
   color: #FFF;
+}
+#dark #accordionSection p {
+  color: #011E55;
 }
 #dark h4 {
   color: #FFF;
@@ -73,7 +79,7 @@ p {
   align-items: center;
   padding-top: 20px;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #bilboardSection nav {
     margin-bottom: 100px;
   }
@@ -83,17 +89,22 @@ p {
     margin-bottom: 100px;
   }
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #bilboardSection nav {
+    margin-bottom: 100px;
+  }
+}
 #bilboardSection nav .navlinks {
   display: none;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #bilboardSection nav .navlinks {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #bilboardSection nav .navlinks a {
     color: #FFF;
     margin: 0px 10px 0px 25px;
@@ -105,7 +116,7 @@ p {
     transition: 0.5s;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #bilboardSection nav .navlinks .secondNavlinks {
     display: flex;
     margin-left: 230px;
@@ -141,7 +152,7 @@ p {
   width: 125px;
   height: 40px;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #bilboardSection nav #logo {
     width: 200px;
     height: 70px;
@@ -153,15 +164,26 @@ p {
     height: 70px;
   }
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #bilboardSection nav #logo {
+    width: 250px;
+    height: 90px;
+  }
+}
 #bilboardSection nav .menu-toggle {
   gap: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #bilboardSection nav .menu-toggle {
     display: none;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #bilboardSection nav .menu-toggle {
+    gap: 30px;
   }
 }
 #bilboardSection nav .menu-toggle p {
@@ -173,6 +195,11 @@ p {
 @media (min-width: 678px) and (max-width: 991px) {
   #bilboardSection nav .menu-toggle p {
     font-size: 35px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #bilboardSection nav .menu-toggle p {
+    font-size: 40px;
   }
 }
 #bilboardSection nav .menu-toggle #toggleBttn {
@@ -188,6 +215,12 @@ p {
     height: 45px;
   }
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #bilboardSection nav .menu-toggle #toggleBttn {
+    width: 60px;
+    height: 45px;
+  }
+}
 #bilboardSection nav .menu-toggle #toggleBttn .bars {
   background-color: #FFF;
   width: 100%;
@@ -195,6 +228,11 @@ p {
   border-radius: 20px;
 }
 @media (min-width: 678px) and (max-width: 991px) {
+  #bilboardSection nav .menu-toggle #toggleBttn .bars {
+    height: 7px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
   #bilboardSection nav .menu-toggle #toggleBttn .bars {
     height: 7px;
   }
@@ -212,6 +250,12 @@ p {
   left: 0;
   z-index: 1000;
   opacity: 0.98;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #bilboardSection nav .overlay {
+    justify-content: flex-start;
+    padding-top: 40px;
+  }
 }
 #bilboardSection nav .overlay #closeBttn {
   position: relative;
@@ -236,6 +280,15 @@ p {
     border-radius: 40px;
   }
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #bilboardSection nav .overlay #closeBttn {
+    bottom: 0px;
+    left: 400px;
+    font-size: 45px;
+    padding: 0px 40px;
+    border-radius: 40px;
+  }
+}
 #bilboardSection nav .overlay a {
   color: #FFF;
   font-size: 26px;
@@ -250,6 +303,12 @@ p {
   #bilboardSection nav .overlay a {
     font-size: 45px;
     padding: 24px 0px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #bilboardSection nav .overlay a {
+    margin: 0px 10px 0px 25px;
+    font-size: 50px;
   }
 }
 #bilboardSection nav .overlay #sunIcon {
@@ -277,6 +336,12 @@ p {
   #bilboardSection nav .overlay .searchDiv {
     margin-top: 40px;
     padding: 13px 80px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #bilboardSection nav .overlay .searchDiv {
+    margin-top: 40px;
+    padding: 13px 130px;
   }
 }
 #bilboardSection nav .overlay .searchDiv input {
@@ -342,7 +407,7 @@ p {
   height: 300px;
   bottom: 70px;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #waitWhatSection #laptop {
     width: 70%;
     height: 600px;
@@ -352,6 +417,13 @@ p {
 @media (min-width: 678px) and (max-width: 991px) {
   #waitWhatSection #laptop {
     height: 600px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #waitWhatSection #laptop {
+    width: 85%;
+    height: 500px;
+    left: 83px;
   }
 }
 #waitWhatSection .girlphotoHloder {
@@ -411,12 +483,17 @@ p {
 #getStartedSection {
   padding: 80px 15px;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #getStartedSection {
     padding-left: 35px;
   }
 }
 @media (min-width: 678px) and (max-width: 991px) {
+  #getStartedSection {
+    padding-left: 60px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
   #getStartedSection {
     padding-left: 60px;
   }
@@ -436,7 +513,7 @@ p {
   justify-content: center;
   gap: 50px;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #getStartedSection .cardsHolder {
     flex-direction: row;
     gap: 30px;
@@ -457,7 +534,7 @@ p {
   bottom: 50px;
   right: 150px;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #getStartedSection .cardsHolder .bluecardHolder #circledNumbers {
     right: 210px;
     width: 60px;
@@ -469,6 +546,13 @@ p {
     right: 340px;
     width: 95px;
     height: 95px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #getStartedSection .cardsHolder .bluecardHolder #circledNumbers {
+    right: 460px;
+    width: 120px;
+    height: 120px;
   }
 }
 #getStartedSection .cardsHolder .bluecardHolder #iconImage {
@@ -506,9 +590,14 @@ p {
     margin: 70px 0px 0px 210px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #getStartedSection button {
     margin: 70px 0px 0px 580px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #getStartedSection button {
+    margin: 70px 0px 0px 350px;
   }
 }
 
@@ -521,7 +610,12 @@ p {
     font-size: 17px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
+  #ResellmeFeaturesSection {
+    padding: 0px 15px 30px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
   #ResellmeFeaturesSection {
     padding: 0px 15px 30px;
   }
@@ -575,6 +669,13 @@ p {
     height: 80px;
   }
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #ResellmeFeaturesSection .featuresPropHolder {
+    justify-content: flex-start;
+    justify-content: flex-start;
+    margin: 10px 0px;
+  }
+}
 #ResellmeFeaturesSection .featuresPropHolder h4 {
   color: #011E55;
   font-size: 28px;
@@ -617,11 +718,17 @@ p {
   font-weight: 900;
   background-color: #011E55;
   color: #FFF;
+  width: 100%;
 }
 #useCaseSection .featuresPropHolder button:hover {
   background-color: rgb(123, 124, 128);
   color: sienna;
   transition: 0.7s;
+}
+#useCaseSection .swiper-nav-btns {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 #testimonialSection {
@@ -643,7 +750,7 @@ p {
     text-align: left;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #testimonialSection h2 {
     margin-top: 170px;
     text-align: left;
@@ -658,7 +765,7 @@ p {
     text-align: left;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #testimonialSection p {
     text-align: left;
     width: 90%;
@@ -689,9 +796,25 @@ p {
 #testimonialSection .testimonialCards .cardTextHolder #changeColor {
   text-align: left;
 }
+#testimonialSection .swiper-nav-btns {
+  width: 100%;
+  justify-content: center;
+}
 
 #accordionSection {
   padding: 80px 15px;
+}
+#accordionSection #textContainer {
+  width: 100%;
+  height: 100%;
+}
+#accordionSection #textContainer p {
+  margin: 37px 0px;
+}
+@media (min-width: 1200px) {
+  #accordionSection #textContainer p {
+    text-align: left;
+  }
 }
 #accordionSection h2 {
   font-family: "cera_problack";
@@ -700,16 +823,8 @@ p {
   font-size: 35px;
   font-weight: 900;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #accordionSection h2 {
-    text-align: left;
-  }
-}
-#accordionSection p {
-  margin: 37px 0px;
-}
-@media (min-width: 992px) {
-  #accordionSection p {
     text-align: left;
   }
 }
@@ -736,6 +851,10 @@ p {
 #logosSection .logosContainer img {
   width: 100%;
   height: 100%;
+}
+#logosSection .swiper-nav-btns {
+  width: 100%;
+  justify-content: center;
 }
 
 #signUpSection .blueHero {
@@ -767,6 +886,7 @@ p {
   font-family: "cera_problack";
   font-weight: 900;
   color: #011E55;
+  background-color: #FFF;
 }
 #signUpSection .blueHero button:hover {
   background-color: rgb(123, 124, 128);
@@ -796,7 +916,12 @@ p {
     display: none;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
+  #footerSection #footerLogo {
+    display: none;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
   #footerSection #footerLogo {
     display: none;
   }
@@ -806,9 +931,19 @@ p {
   flex-direction: column;
   margin-top: 30px;
 }
-@media (min-width: 992px) {
+@media (min-width: 678px) and (max-width: 991px) {
+  #footerSection .footerTextHolder {
+    padding-left: 30px;
+  }
+}
+@media (min-width: 1200px) {
   #footerSection .footerTextHolder {
     padding-left: 130px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #footerSection .footerTextHolder {
+    padding-left: 50px;
   }
 }
 #footerSection .footerTextHolder h6 {
